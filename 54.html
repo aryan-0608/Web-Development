@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interaction using, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        // Alert in in -browser javascipt  --- Does not return 
+        // alert("This is a message");
+
+        // let name = prompt("what is your name?", " Guest ");
+        // console.log(name);
+
+        let deletepost = confirm("Are you sure you want to delete this post?");
+        if(deletepost){
+            //code to deleted the post
+            console.log("Post deleted succesfully");
+        } else {
+            //code to cancle deletion of the post
+            console.log("Post not deleted");
+        }
+        console.log(deletepost);
+
+    </script>
+
+</body>
+</html>
