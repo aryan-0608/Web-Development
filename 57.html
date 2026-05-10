@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+
+    <style>
+        #btn{
+            padding: 34px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>JS Events</h1>
+        <p id="para">
+            This is a simple example of JavaScript events.
+        </p>
+    </div>
+
+    <button id="btn" onclick="toggleHide()">
+        Show / Hide
+    </button>
+
+    <script>
+
+        function toggleHide(){
+
+            let para = document.getElementById("para");
+
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+
+            else{
+                para.style.display = 'block';
+            }
+        }
+
+    </script>
+
+</body>
+</html>
