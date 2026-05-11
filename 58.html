@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Javascript setTimeout and ClearTimeout</title>
+</head>
+
+<body>
+
+    <!-- Container div -->
+    <div class="container">
+        Time now is  <span id="time"></span>
+    </div>
+
+    <script>
+
+        // Printing message in console
+        console.log("This is a message from setTimeout");
+
+        // setTimeout --> Runs a function once after a given time
+        // clearTimeout --> Stops the timeout before execution
+
+        // Function definition
+        function greet(name, byeText){
+
+            // Printing greeting message
+            console.log("Hello " + name + ", Good Morning " + byeText);
+
+        }
+
+        // Calling greet function after 2 seconds
+        // let timeOut = setTimeout(greet, 2000, "Aryan", "Goodbye!");
+
+        // -->Printing timeout ID
+        // console.log(timeOut);
+
+        //--> Clearing timeout so function will not run
+        // clearTimeout(timeOut);
+
+        // Wrong way because function is called immediately
+        // setTimeout(greet(),12000);
+
+        //  let intervalId = setInterval(greet, 2000, "Aryan", "Goodbye!");
+        // clearInterval(intervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime, 1000);
+
+    </script>
+
+</body>
+</html>
