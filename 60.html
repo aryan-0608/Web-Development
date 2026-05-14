@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow function tutorial
+
+    </div>
+    <script>
+      
+    //   Arrow function
+
+    let greet = () => {
+        console.log("Hello world");
+    }
+//    let sum2 = (a, b) => {
+//         return a + b;
+//     }
+    
+
+let sum2 = (a, b) => a + b; // one line me return karna hai to curly braces aur return keyword dono hata do
+let half = a => a/2; // agar ek hi parameter hai to parentheses hata do
+
+    greet();
+    setTimeout(() => {
+        console.log("I am an arrow function inside setTimeout");
+    }, 5000);
+
+    let obj1={
+        names:["Aryan","sachin","rohit"],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log("kukdoo koo" + student); 
+            })
+        }
+    }
+    obj1.speak();
+
+
+
+        // function greet(){
+        //     console.log("Hello world");
+        // }
+        // greet();
+    </script>
+
+    </body>
+    </html>
