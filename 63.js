@@ -1,0 +1,73 @@
+const http = require('http');
+
+const hostname= '127.0.0.1' ;
+const port = 3000;
+
+const server = http.createServer((req,res)=>{
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    // res.end('Hello, World!');
+    res.end(`<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <title> pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223,245,201);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+        a:hover{
+            color: black;
+            background-color: skyblue;
+        }
+        a:visited{
+            background-color:yellow;
+
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        .btn{
+            font-weight:bold;
+            background-color: rgb(134, 124, 124);
+            padding:6px;
+            border: none;
+            cursor :pointer;
+            font-size:13px;
+            border-radius:4px;
+        }
+        .btn:hover{
+            color : darkgoldenrod;
+            background-color: pink;
+            border:2px solid black;
+        }
+
+
+    </style>
+ </head>
+ <body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>the sit of after the goodmorninh the aryan patel a very beatiful wonder place in washing the velit</p>
+        <a href="http://instagrm.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+ </body>
+</html>`);
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
