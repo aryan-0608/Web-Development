@@ -1,0 +1,28 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "this is the best package ever bulit by someone",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryan-0608/Web-Development.git"
+  },
+  "keywords": [
+    "34"
+  ],
+  "author": "aryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aryan-0608/Web-Development/issues"
+  },
+  "homepage": "https://github.com/aryan-0608/Web-Development#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "browserify": "^17.0.1"
+  }
+}
